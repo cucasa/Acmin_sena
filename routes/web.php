@@ -12,6 +12,6 @@ Route::get('/', function () {
 
 
 
-Route::get('ormconsultas',[OrmController::class,'consultas']);
+Route::get('/ormconsultas',[OrmController::class,'consultas']);
 
 

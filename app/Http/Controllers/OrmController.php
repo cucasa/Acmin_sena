@@ -1,14 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\computers;
-use App\Models\apprentices;
-use App\Models\areas;
-use App\Models\course_teacher;
-use App\Models\courses;
-use App\Models\prueva;
-use App\Models\teachers;
-use App\Models\training_centers;
+use App\Models\Computers;
 
 
 
@@ -23,9 +16,9 @@ class OrmController extends Controller
         // $profile=Profile::find(2);
         // return $profile->user;
 
-            $Computer = computers::find(1);
-            return $Computer;
-        }
+        $computer = Computers::find(1);
+        return $computer;
+
 
         // $post=Post::find(3);
         // return $post->category;
@@ -49,9 +42,9 @@ class OrmController extends Controller
         //  $role->users()->attach(2);
         //  return $role;
 
-
-
-
     }
+
+ }
+
 
 
